@@ -21,7 +21,7 @@ create table player(
     playername varchar(20),
     position varchar(20) not null,
     teamId int,
-    isouter BOOLEAN,
+    is_outer BOOLEAN,
     createdAt TIMESTAMP
 );
 ```
