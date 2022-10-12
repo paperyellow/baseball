@@ -6,7 +6,8 @@
 
 	<select id="findAll"
 		resultType="site.metacoding.red.domain.stadium.Stadium">
-		
+		SELECT id, row_number() over(order BY id asc) as NO, name, createdAT 
+		FROM stadium
 	</select>
 
 	<select id="findById"
